@@ -11,3 +11,7 @@ $bgr-color: #f5f4fa;
 $bgr-icon: #afb1b8;
 $footer-bgr-color: #2f303a;
 $description-border-color: #eeeeee;
+
+@mixin transition ($property) {
+  transition: $property 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
