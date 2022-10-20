@@ -25,7 +25,11 @@ text-align: center;
       margin-left: auto;
       margin-right: auto;
     }
-}
+
+  @media screen and (min-width: 1200px) {
+      text-align: left;
+    }
+  }
 
 .footer-contacts-list__address {
   color: $fone-color;
@@ -136,7 +140,6 @@ text-align: center;
 }
 
 .footer-subscription__input {
-  width: 358px;
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -147,6 +150,10 @@ text-align: center;
   &:hover,
   &:focus {
     background-color: $fone-color;
+  }
+
+  @media screen and (min-width: 480px) {
+    width: 358px;
   }
 }
 
