@@ -17,6 +17,16 @@
   }
 }
 
+.teammate {
+  padding-top: 30px;
+  padding-bottom: 24px;
+  
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 30px;
+  }
+
+}
+
 .team-list {
 
   @media screen and (min-width: 768px) and (max-width: 1199px) {
@@ -30,7 +40,6 @@
 }
 
 .team-list__title {
-  margin-top: 30px;
   margin-bottom: 10px;
   font-weight: 500;
   font-size: 16px;
@@ -52,7 +61,6 @@
   display: flex;
   justify-content: center;
   gap: 10px;
-  margin-bottom: 30px;
 }
 
 .social-list__link {
@@ -65,15 +73,10 @@
   fill: $bgr-icon;
   border-radius: 50%;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  margin-bottom: 30px;
   &:hover,
   &:focus {
     fill: $fone-color;
     background-color: $accent-color;
-  }
-
-  @media screen and (min-width: 768px) {
-    margin-bottom: 0;
   }
 }
 

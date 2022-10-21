@@ -1284,6 +1284,16 @@ textarea:focus {
   }
 }
 
+.teammate {
+  padding-top: 30px;
+  padding-bottom: 24px;
+}
+@media screen and (min-width: 1200px) {
+  .teammate {
+    padding-bottom: 30px;
+  }
+}
+
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .team-list {
     display: -webkit-box;
@@ -1302,7 +1312,6 @@ textarea:focus {
 }
 
 .team-list__title {
-  margin-top: 30px;
   margin-bottom: 10px;
   font-weight: 500;
   font-size: 16px;
@@ -1328,7 +1337,6 @@ textarea:focus {
       -ms-flex-pack: center;
           justify-content: center;
   gap: 10px;
-  margin-bottom: 30px;
 }
 
 .social-list__link {
@@ -1348,16 +1356,10 @@ textarea:focus {
   border-radius: 50%;
   -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  margin-bottom: 30px;
 }
 .social-list__link:hover, .social-list__link:focus {
   fill: #FFFFFF;
   background-color: #2196F3;
-}
-@media screen and (min-width: 768px) {
-  .social-list__link {
-    margin-bottom: 0;
-  }
 }
 
 .team-list__item {
@@ -1712,6 +1714,9 @@ footer .container {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
   }
 }
 
@@ -1756,10 +1761,14 @@ footer .container {
   color: #2196F3;
 }
 
+.footer-join-container {
+  margin-top: 60px;
+}
 @media screen and (min-width: 768px) {
   .footer-join-container {
     margin-left: auto;
     margin-right: auto;
+    margin-top: 0;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1810,11 +1819,15 @@ footer .container {
   text-transform: uppercase;
   color: #FFFFFF;
   margin-bottom: 20px;
-  margin-top: 60px;
 }
 @media screen and (min-width: 768px) {
   .footer-join-container_text {
     margin-top: 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer-join-container_text {
+    text-align: left;
   }
 }
 
@@ -1873,6 +1886,11 @@ footer .container {
   text-transform: uppercase;
   color: #FFFFFF;
   margin-bottom: 20px;
+}
+@media screen and (min-width: 1200px) {
+  .footer-subscription__text {
+    text-align: left;
+  }
 }
 
 .footer-subscription__btn {
